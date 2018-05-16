@@ -5,8 +5,24 @@
   <title>Exercice 2</title>
 </head>
 <body>
-  <form>
-    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom"/>
+
+  <form name="form1">
+    <label for="nom">Votre nom  : </label>
+    <input type="text" name="nom" value="" id="nom"/>
   </form>
+
+
+<script type="text/javascript">
+
+var focus=document.getElementById("nom");
+
+focus.onblur=afficherMessage;
+
+function afficherMessage(){
+  alert("Merci de votre participation!");
+}
+
+</script>
+
 </body>
 </html>

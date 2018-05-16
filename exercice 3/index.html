@@ -5,8 +5,22 @@
   <title>Exercice 3</title>
 </head>
 <body>
-  <form>
-    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" />
+  <form name="form1">
+    <label for="nom">Votre nom  : </label>
+    <input type="text" name="nom" value="" id="nom" />
   </form>
+
+<script type="text/javascript">
+
+
+document.addEventListener('keypress', (keyboard) => {
+  const nomTouche = keyboard.key;
+  var nom2=document.form1.nom.value;
+
+  alert('Vous avez tapé\n\n' + 'touche : ' + nomTouche +'\n\n' + 'Votre nom :' +' '+ nom2);
+});
+
+</script>
+
 </body>
 </html>
